@@ -28,19 +28,19 @@ const pageLinks: PageLinks[] = [
     title: "Geography",
     icon: <GlobeHemisphereEastIcon size={24} />,
     description: "Landscape and prefectures",
-    href: "geography",
+    href: "/geography",
   },
   {
     title: "Culture and traditions",
     icon: <GrainsIcon size={24} />,
     description: "Heritage, Beliefs, Lifestyle",
-    href: "culture",
+    href: "/culture",
   },
   {
     title: "Language",
     icon: <TranslateIcon size={24} />,
     description: "Hiragana, Katakana, Kanji",
-    href: "language",
+    href: "/language",
   },
 ];
 

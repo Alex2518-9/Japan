@@ -1,3 +1,11 @@
+import { StaticImport } from "next/dist/shared/lib/get-img-props";
+
+export type LanguageCardProps = {
+  title: string;
+  src: string | StaticImport;
+  description: string;
+};
+
 type TimelineData = {
   time: string;
   title: string;
@@ -52,5 +60,23 @@ export const timelineData: TimelineData[] = [
     title: "Reiwa Era Begins",
     description:
       "Emperor Naruhito ascended the throne, marking the beginning of the Reiwa era, emphasizing peace and cultural harmony.",
+  },
+];
+
+export const languageCardItems: LanguageCardProps[] = [
+  {
+    title: "Hiragana",
+    src: "/hiragana.png",
+    description: "",
+  },
+  {
+    title: "Katakana",
+    src: "/katakana.png",
+    description: "",
+  },
+  {
+    title: "Kanji",
+    src: "/kanji.png",
+    description: "sadfasdfsfsfsfdsdf",
   },
 ];
