@@ -2,6 +2,7 @@
 import Image from "next/image";
 import React from "react";
 import JapanMap from "./JapanMap";
+import GeographyInfo from "./GeographyInfo";
 
 const Geography = () => {
   return (
@@ -31,9 +32,12 @@ const Geography = () => {
         </div>
       </section>
       {/* Blank map Section */}
-      <section id="map" className="relative z-10 py-20 px-6 md:px-12 lg:px-20">
-        <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-2">
-          <div></div>
+      <section
+        id="map"
+        className="relative z-10 py-20 px-6 bg-[#4E7C75] md:px-12 lg:px-20 min-h-screen"
+      >
+        <div className="grid gap-8 sm:grid-cols-1 2xl:grid-cols-2">
+          <GeographyInfo />
           <JapanMap />
         </div>
       </section>
