@@ -44,7 +44,7 @@ const pageLinks: PageLinks[] = [
   },
 ];
 
-export default function Home() {
+const Home = () => {
   return (
     <main className="relative min-h-screen">
       {/* Background Image */}
@@ -90,4 +90,6 @@ export default function Home() {
       </div>
     </main>
   );
-}
+};
+
+export default Home;
