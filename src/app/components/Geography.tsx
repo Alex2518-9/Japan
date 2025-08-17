@@ -34,7 +34,7 @@ const Geography = () => {
       {/* Blank map Section */}
       <section
         id="map"
-        className="relative z-10 py-20 px-6 bg-[#4E7C75] md:px-12 lg:px-20 min-h-screen"
+        className="relative z-10 py-20 px-6 bg-gradient-to-b from-gray-800 to-slate-800 md:px-12 lg:px-20 min-h-screen"
       >
         <div className="grid gap-8 sm:grid-cols-1 2xl:grid-cols-2">
           <GeographyInfo />

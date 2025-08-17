@@ -12,7 +12,7 @@ const LanguageDetails = () => {
         id="hiragana"
         className="grid grid-cols-1  xl:grid-cols-2 w-full"
       >
-        <div className="relative shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] flex items-center justify-center w-full rounded-md bg-white">
+        <div className="relative shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] max-md:h-96 flex items-center justify-center w-full rounded-md bg-white">
           <Image
             alt="Hiragana table"
             fill
@@ -51,7 +51,7 @@ const LanguageDetails = () => {
           better understand everyday vocabulary, advertisements, and menus,
           which often mix all three writing systems together.
         </div>
-        <div className="relative shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] flex items-center justify-center w-full rounded-md bg-amber-50">
+        <div className="relative shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] max-md:h-96 flex items-center justify-center w-full rounded-md bg-white">
           <Image
             alt="Katakana table"
             fill
@@ -60,16 +60,19 @@ const LanguageDetails = () => {
           />
         </div>
       </section>
-      <section id="kanji" className="grid grid-cols-1 xl:grid-cols-2 w-full">
-        <div className="relative shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] flex items-center justify-center w-full rounded-md bg-amber-50">
+      <section
+        id="kanji"
+        className="grid grid-cols-1 gap-8 xl:grid-cols-2 w-full"
+      >
+        <div className="relative shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] max-md:h-96 flex items-center justify-center w-full rounded-md">
           <Image
             alt="Kanji list"
             fill
-            className="object-cover rounded-md h-full"
+            className="object-cover rounded-md"
             src="/kanji_list.jpg"
           />
         </div>
-        <div className="flex items-center w-full p-10 leading-9 justify-end text-white">
+        <div className="flex items-center w-full p-10 leading-6 md:leading-9 justify-end text-white">
           Kanji is one of the three main writing systems in Japanese, alongside
           hiragana and katakana. Unlike the other two, kanji are logographic
           characters, meaning each symbol represents an idea, object, or concept
