@@ -20,7 +20,7 @@ const LanguageDetails = () => {
             src="/Table_hiragana.png"
           />
         </div>
-        <div className="flex items-center p-10 leading-9 justify-end text-white">
+        <div className="flex items-center p-10 leading-6 md:leading-9 justify-end text-white">
           Hiragana is one of the three Japanese writing systems and is usually
           the first one learned by children and beginners. It is a phonetic
           script with forty-six characters, each representing a sound. With
@@ -34,7 +34,7 @@ const LanguageDetails = () => {
         </div>
       </section>
       <section id="katakana" className="grid grid-cols-1 xl:grid-cols-2 w-full">
-        <div className="flex items-center w-full p-10 leading-9 justify-start text-white">
+        <div className="flex items-center w-full p-10 leading-6 md:leading-9 justify-start text-white">
           Katakana is one of the three main writing systems used in Japanese,
           alongside hiragana and kanji. Like hiragana, katakana is a phonetic
           script with forty-six basic characters, each representing a sound.
