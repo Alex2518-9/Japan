@@ -1,7 +1,9 @@
+"use client";
 import Image from "next/image";
 import React from "react";
 import LanguageCard from "./LanguageCard";
 import { languageCardItems } from "../data";
+import LanguageDetails from "./LanguageDetails";
 
 const Language = () => {
   return (
@@ -30,7 +32,7 @@ const Language = () => {
           </h1>
         </div>
       </section>
-      <section className="relative mx-auto bg-gradient-to-b from-gray-800 to-black gap-6 p-24 flex flex-col items-start justify-center min-h-screen">
+      <section className="relative mx-auto bg-gradient-to-b from-gray-800 to-slate-800 gap-6 p-24 flex flex-col items-start justify-center min-h-screen">
         <div className="flex flex-col gap-2 text-white w-full">
           <h1 className="text-4xl font-semibold pb-2">The Japanese Language</h1>
           <p className="break-normal">
@@ -71,15 +73,11 @@ const Language = () => {
           </p>
         </div>
         <div className="grid grid-cols-1 xl:grid-cols-3 w-full">
-          {languageCardItems.map(({ title, description, src }) => (
-            <LanguageCard
-              key={title}
-              title={title}
-              description={description}
-              src={src}
-            />
+          {languageCardItems.map(({ title, src }) => (
+            <LanguageCard key={title} title={title} src={src} />
           ))}
         </div>
+        <LanguageDetails />
       </section>
     </main>
   );

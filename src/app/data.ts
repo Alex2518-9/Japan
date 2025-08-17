@@ -3,7 +3,6 @@ import { StaticImport } from "next/dist/shared/lib/get-img-props";
 export type LanguageCardProps = {
   title: string;
   src: string | StaticImport;
-  description: string;
 };
 
 type TimelineData = {
@@ -67,16 +66,13 @@ export const languageCardItems: LanguageCardProps[] = [
   {
     title: "Hiragana",
     src: "/hiragana.png",
-    description: "",
   },
   {
     title: "Katakana",
     src: "/katakana.png",
-    description: "",
   },
   {
     title: "Kanji",
     src: "/kanji.png",
-    description: "sadfasdfsfsfsfdsdf",
   },
 ];
