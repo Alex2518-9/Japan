@@ -22,17 +22,19 @@ const CultureAndTradition = () => {
               Ikebana (生け花): Flower arranging as a meditative practice,
               focusing on harmony, balance, and form.
             </li>
-            <li>Traditional Theater:</li>
-            <ul className="list-disc pl-4">
-              <li>
-                Kabuki: Dramatic performance with elaborate costumes and
-                stylized movements.
-              </li>
-              <li>
-                Noh: Classical musical drama featuring masks and slow, symbolic
-                actions.
-              </li>
-            </ul>
+            <li>
+              Traditional Theater:
+              <ul className="list-disc pl-4">
+                <li>
+                  Kabuki: Dramatic performance with elaborate costumes and
+                  stylized movements.
+                </li>
+                <li>
+                  Noh: Classical musical drama featuring masks and slow,
+                  symbolic actions.
+                </li>
+              </ul>
+            </li>
           </ul>
         </div>
         <div className="rounded-md flex flex-col gap-2 bg-black/60 text-white p-4 shadow-md shadow-white">

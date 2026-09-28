@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`fixed w-full z-50  bg-black/30 transition-all ${
+      className={`fixed inset-x-0 top-0 z-50 bg-black/30 transition-all ${
         scrolled ? "backdrop-blur-lg shadow-xl" : "backdrop-blur-md"
       }`}
     >
@@ -43,8 +43,12 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center">
             <button
+              type="button"
               onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-amber-500 focus:outline-none transition"
+              aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
+              aria-expanded={isOpen}
+              aria-controls="mobile-navigation"
+              className="rounded-md p-2 text-white transition hover:text-amber-500 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-500"
             >
               {isOpen ? (
                 <XIcon weight="bold" className="cursor-pointer" size={32} />
@@ -58,7 +62,9 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-gradient-to-b from-red-700/20 via-orange-500/70 to-amber-500/70 backdrop-blur-md transition-max-h duration-300 overflow-hidden ${
+        id="mobile-navigation"
+        inert={!isOpen}
+        className={`md:hidden overflow-hidden bg-gradient-to-b from-red-700/20 via-orange-500/70 to-amber-500/70 backdrop-blur-md transition-[max-height] duration-300 ${
           isOpen ? "max-h-96" : "max-h-0"
         }`}
       >
@@ -66,8 +72,8 @@ const Navbar = () => {
           {["History", "Geography", "Culture", "Language"].map((item) => (
             <Link
               key={item}
-              href={`#${item.toLowerCase()}`}
-              className="text-white text-lg font-medium hover:translate-x-2 transition"
+              href={`/${item.toLowerCase()}`}
+              className="rounded px-2 py-2 text-lg font-medium text-white transition hover:translate-x-2 hover:text-amber-200 focus-visible:outline-2 focus-visible:outline-amber-300"
               onClick={() => setIsOpen(false)}
             >
               {item}

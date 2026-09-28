@@ -16,13 +16,13 @@ const GeographyInfo = () => {
           <li>
             Composition: An archipelago (group of islands) with about 14,000
             islands, but the four main islands are:
+            <ul className="flex list-decimal flex-col gap-2 pl-6">
+              <li>Honshu (largest, includes Tokyo, Kyoto, Osaka)</li>
+              <li>Hokkaido (north, cold climate, Sapporo)</li>
+              <li>Shikoku (smallest of the four)</li>
+              <li>Kyushu (south, subtropical climate, Nagasaki, Fukuoka)</li>
+            </ul>
           </li>
-          <ul className="flex list-decimal flex-col gap-2 pl-6">
-            <li>Honshu (largest, includes Tokyo, Kyoto, Osaka)</li>
-            <li>Hokkaido (north, cold climate, Sapporo)</li>
-            <li>Shikoku (smallest of the four)</li>
-            <li>Kyushu (south, subtropical climate, Nagasaki, Fukuoka)</li>
-          </ul>
         </ul>
       </div>
       <div id="landscape" className="">
@@ -31,10 +31,12 @@ const GeographyInfo = () => {
           <h3 className="font-semibold">Landscape:</h3>
         </div>
         <ul className="pl-9 gap-2 list-disc flex flex-col text-sm">
-          <li className="">Mountains: Around 73% of Japan is mountainous.</li>
-          <ul className="flex list-disc flex-col gap-2 pl-6">
-            <li>Famous peak: Mount Fuji (3,776m), a symbol of Japan.</li>
-          </ul>
+          <li className="">
+            Mountains: Around 73% of Japan is mountainous.
+            <ul className="flex list-disc flex-col gap-2 pl-6">
+              <li>Famous peak: Mount Fuji (3,776m), a symbol of Japan.</li>
+            </ul>
+          </li>
           <li>
             Plains: Small but important areas like the Kanto Plain (Tokyo
             region) are densely populated.
@@ -53,12 +55,14 @@ const GeographyInfo = () => {
         </div>
         <ul className="pl-9 gap-2 list-disc flex flex-col text-sm">
           <li>Japan has a long coastline (~29,000 km).</li>
-          <li>Surrounded by:</li>
-          <ul className="flex list-decimal flex-col gap-2 pl-6">
-            <li>Sea of Japan (west, between Japan & Korea/China)</li>
-            <li>Pacific Ocean (east)</li>
-            <li>East China Sea (southwest)</li>
-          </ul>
+          <li>
+            Surrounded by:
+            <ul className="flex list-decimal flex-col gap-2 pl-6">
+              <li>Sea of Japan (west, between Japan & Korea/China)</li>
+              <li>Pacific Ocean (east)</li>
+              <li>East China Sea (southwest)</li>
+            </ul>
+          </li>
           <li>Fishing is vital — seafood is a staple in Japanese diet.</li>
         </ul>
       </div>
@@ -68,12 +72,14 @@ const GeographyInfo = () => {
           <h3 className="font-semibold">Climate:</h3>
         </div>
         <ul className="pl-9 gap-2 list-disc flex flex-col text-sm">
-          <li>Stretches 2,000 miles north to south, so climates vary:</li>
-          <ul className="flex list-decimal flex-col gap-2 pl-6">
-            <li>Hokkaido: cold winters, snowy (great for skiing).</li>
-            <li>Honshu: temperate, with four distinct seasons.</li>
-            <li>Kyushu & Okinawa: subtropical, hot summers, mild winters.</li>
-          </ul>
+          <li>
+            Stretches 2,000 miles north to south, so climates vary:
+            <ul className="flex list-decimal flex-col gap-2 pl-6">
+              <li>Hokkaido: cold winters, snowy (great for skiing).</li>
+              <li>Honshu: temperate, with four distinct seasons.</li>
+              <li>Kyushu & Okinawa: subtropical, hot summers, mild winters.</li>
+            </ul>
+          </li>
           <li>Rainy season: Early summer.</li>
           <li>Typhoons: Late summer and early autumn.</li>
         </ul>

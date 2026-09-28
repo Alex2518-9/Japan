@@ -3,7 +3,7 @@ import React from "react";
 
 const JapanMap = () => {
   return (
-    <div className="[&_path]:stroke-1 [&_path]:stroke-gray-200 [&_path]:hover:cursor-pointer max-sm:hidden [&_path]:hover:fill-amber-500 ">
+    <div className="mx-auto w-full max-w-3xl [&_svg]:block [&_svg]:h-auto [&_svg]:w-full [&_path]:stroke-1 [&_path]:stroke-gray-200 [&_path]:hover:cursor-pointer [&_path]:hover:fill-amber-500">
       <svg
         baseProfile="tiny"
         strokeLinecap="round"

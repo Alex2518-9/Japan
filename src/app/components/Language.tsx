@@ -1,40 +1,34 @@
 "use client";
-import Image from "next/image";
 import React from "react";
 import LanguageCard from "./LanguageCard";
 import { languageCardItems } from "../data";
 import LanguageDetails from "./LanguageDetails";
+import HeroImage from "./HeroImage";
 
 const Language = () => {
   return (
     <main className="relative min-h-screen">
       <section
         id="hero"
-        className="relative flex items-center justify-center h-screen"
+        className="relative flex min-h-[100svh] items-center justify-center"
       >
         {/* Background Image */}
         <div className="absolute inset-0">
-          <Image
-            src="/language.jpg"
-            alt="Background"
-            fill
-            priority
-            className="object-cover"
-          />
+          <HeroImage src="/language.jpg" />
           {/* Overlay */}
           <div className="absolute inset-0 bg-black/50" />
         </div>
 
         {/* Hero Section */}
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6">
+        <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-4 text-center sm:px-6">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fadeIn">
             日本語
           </h1>
         </div>
       </section>
-      <section className="relative mx-auto bg-gradient-to-b from-gray-800 to-slate-800 gap-6 p-24 flex flex-col items-start justify-center min-h-screen">
-        <div className="flex flex-col gap-2 text-white w-full">
-          <h1 className="text-4xl font-semibold pb-2">The Japanese Language</h1>
+      <section className="relative mx-auto flex min-h-screen flex-col items-start justify-center gap-6 bg-gradient-to-b from-gray-800 to-slate-800 px-4 py-12 sm:px-6 sm:py-16 lg:p-24">
+        <div className="flex w-full flex-col gap-3 text-white">
+          <h1 className="pb-2 text-3xl font-semibold sm:text-4xl">The Japanese Language</h1>
           <p className="break-normal">
             The Japanese language, known as Nihongo (日本語), is spoken by over
             125 million people, primarily in Japan. It is a unique and complex
@@ -72,7 +66,7 @@ const Language = () => {
             the world.
           </p>
         </div>
-        <div className="grid grid-cols-1 xl:grid-cols-3 w-full">
+        <div className="grid w-full grid-cols-1 justify-items-center gap-4 sm:grid-cols-2 xl:grid-cols-3">
           {languageCardItems.map(({ title, src }) => (
             <LanguageCard key={title} title={title} src={src} />
           ))}

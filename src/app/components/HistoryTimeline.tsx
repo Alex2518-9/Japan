@@ -14,7 +14,7 @@ const HistoryTimeline = () => {
           {timelineData.map(({ title, description, time }, index) => (
             <li
               key={index}
-              className={`relative bg-gray-800 rounded-lg p-6 md:w-1/2 md:mb-12
+              className={`relative rounded-lg bg-gray-800 p-6 transition-shadow duration-300 hover:shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] md:mb-12 md:w-1/2
           ${
             index % 2 === 0
               ? "md:mr-auto md:rounded-tr-none"

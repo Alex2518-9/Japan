@@ -5,9 +5,9 @@ import Image from "next/image";
 
 const LanguageCard = ({ title, src }: LanguageCardProps) => {
   return (
-    <div className="relative flex justify-center items-center flex-wrap w-full [transform-style:preserve-3d]">
+    <div className="relative flex w-full justify-center [transform-style:preserve-3d]">
       {/* Box */}
-      <div className="relative w-[350px] h-[400px] m-10 bg-white rounded-2xl [transform-style:preserve-3d] block group">
+      <div className="group relative h-[360px] w-full max-w-[350px] rounded-2xl bg-white [transform-style:preserve-3d] sm:h-[400px]">
         {/* Name */}
         <h1 className="absolute text-3xl top-0 left-0 w-full text-center text-black [transform-style:preserve-3d] translate-z-[75px] opacity-0 transition-all duration-500 z-10 group-hover:top-10 group-hover:opacity-100">
           {title}
@@ -31,7 +31,7 @@ const LanguageCard = ({ title, src }: LanguageCardProps) => {
             height={200}
             src={src}
             alt={title}
-            className="absolute top-1/2 left-1/2 max-w-[300px] transition-all duration-500 z-[1000] [transform-style:preserve-3d] -translate-x-1/2 -translate-y-1/2 translate-z-[0px] -rotate-[5deg] group-hover:translate-z-[100px]"
+            className="absolute top-1/2 left-1/2 h-auto w-[200px] max-w-[80vw] -translate-x-1/2 -translate-y-1/2 rotate-[-5deg] [transform-style:preserve-3d] translate-z-[0px] transition-all duration-500 group-hover:translate-z-[100px]"
           />
         </div>
       </div>

@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import { ReactNode } from "react";
+import HeroImage from "./HeroImage";
 import {
   BookOpenTextIcon,
   GlobeHemisphereEastIcon,
@@ -49,19 +49,13 @@ const Home = () => {
     <main className="relative min-h-screen">
       {/* Background Image */}
       <div className="absolute inset-0">
-        <Image
-          src="/bg.jpg"
-          alt="Background"
-          fill
-          priority
-          className="object-cover"
-        />
+        <HeroImage src="/bg.jpg" />
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/50" />
       </div>
 
       {/* Hero Section */}
-      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen text-center px-6">
+      <div className="relative z-10 flex min-h-[100svh] flex-col items-center justify-center px-4 py-24 text-center sm:px-6">
         <h1 className="text-4xl md:text-6xl font-bold text-white mb-6 animate-fadeIn">
           日本の世界
         </h1>
@@ -69,20 +63,20 @@ const Home = () => {
         {/* Pages Section */}
         <section
           id="pages"
-          className="relative z-10 py-20 px-6 md:px-12 lg:px-20"
+          className="relative z-10 w-full py-8 sm:px-6 sm:py-12 lg:px-12"
         >
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
-            {pageLinks.map(({ description, href, title, icon }, i) => (
+          <div className="grid gap-4 sm:grid-cols-2 sm:gap-6 lg:grid-cols-4">
+            {pageLinks.map(({ description, href, title, icon }) => (
               <Link
-                key={i}
+                key={href}
                 href={href}
-                className="p-6 bg-gray-50 rounded-2xl shadow-md hover:shadow-xl transition transform duration-300 ease-in-out hover:-translate-y-1"
+                className="rounded-2xl bg-gray-50 p-5 text-gray-900 shadow-md transition duration-300 ease-in-out hover:-translate-y-1 hover:shadow-xl sm:p-6"
               >
                 <div className="flex items-center gap-2 justify-center mb-2">
                   {icon}
                   <h3 className="text-xl font-bold">{title}</h3>
                 </div>
-                <p className="text-gray-600">{description}</p>
+                <p className="text-gray-700">{description}</p>
               </Link>
             ))}
           </div>

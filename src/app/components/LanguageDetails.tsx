@@ -6,13 +6,13 @@ const LanguageDetails = () => {
   return (
     <div
       id="details"
-      className="pt-24 flex flex-col space-y-10 w-full min-h-screen "
+      className="flex min-h-screen w-full flex-col space-y-12 pt-12 sm:space-y-16 sm:pt-20"
     >
       <section
         id="hiragana"
-        className="grid grid-cols-1  xl:grid-cols-2 w-full"
+        className="grid w-full grid-cols-1 gap-6 xl:grid-cols-2"
       >
-        <div className="relative shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] max-md:h-96 flex items-center justify-center w-full rounded-md bg-white">
+        <div className="relative flex h-64 w-full items-center justify-center rounded-md bg-white shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] sm:h-80 xl:h-96">
           <Image
             alt="Hiragana table"
             fill
@@ -20,7 +20,7 @@ const LanguageDetails = () => {
             src="/Table_hiragana.png"
           />
         </div>
-        <div className="flex items-center p-10 leading-6 md:leading-9 justify-end text-white">
+        <div className="flex items-center p-5 leading-7 text-white sm:p-8 md:leading-9 lg:p-10">
           Hiragana is one of the three Japanese writing systems and is usually
           the first one learned by children and beginners. It is a phonetic
           script with forty-six characters, each representing a sound. With
@@ -33,8 +33,8 @@ const LanguageDetails = () => {
           Mastering it is an essential step for anyone learning the language.
         </div>
       </section>
-      <section id="katakana" className="grid grid-cols-1 xl:grid-cols-2 w-full">
-        <div className="flex items-center w-full p-10 leading-6 md:leading-9 justify-start text-white">
+      <section id="katakana" className="grid w-full grid-cols-1 gap-6 xl:grid-cols-2">
+        <div className="flex w-full items-center p-5 leading-7 text-white sm:p-8 md:leading-9 lg:p-10">
           Katakana is one of the three main writing systems used in Japanese,
           alongside hiragana and kanji. Like hiragana, katakana is a phonetic
           script with forty-six basic characters, each representing a sound.
@@ -51,7 +51,7 @@ const LanguageDetails = () => {
           better understand everyday vocabulary, advertisements, and menus,
           which often mix all three writing systems together.
         </div>
-        <div className="relative shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] max-md:h-96 flex items-center justify-center w-full rounded-md bg-white">
+        <div className="relative flex h-64 w-full items-center justify-center rounded-md bg-white shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] sm:h-80 xl:h-96">
           <Image
             alt="Katakana table"
             fill
@@ -62,9 +62,9 @@ const LanguageDetails = () => {
       </section>
       <section
         id="kanji"
-        className="grid grid-cols-1 gap-8 xl:grid-cols-2 w-full"
+        className="grid w-full grid-cols-1 gap-6 xl:grid-cols-2"
       >
-        <div className="relative shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] max-md:h-96 flex items-center justify-center w-full rounded-md">
+        <div className="relative flex h-64 w-full items-center justify-center rounded-md shadow-[0_0_20px_5px_rgba(59,130,246,0.7)] sm:h-80 xl:h-96">
           <Image
             alt="Kanji list"
             fill
@@ -72,7 +72,7 @@ const LanguageDetails = () => {
             src="/kanji_list.jpg"
           />
         </div>
-        <div className="flex items-center w-full p-10 leading-6 md:leading-9 justify-end text-white">
+        <div className="flex w-full items-center p-5 leading-7 text-white sm:p-8 md:leading-9 lg:p-10">
           Kanji is one of the three main writing systems in Japanese, alongside
           hiragana and katakana. Unlike the other two, kanji are logographic
           characters, meaning each symbol represents an idea, object, or concept
