@@ -1,36 +1,68 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JapanWorld
 
-## Getting Started
+**JapanWorld** is a visual guide to Japan, bringing together an introduction to the country's history, geography, culture, traditions, and language in one place. Browse the sections from the home page or use the navigation to explore each topic.
 
-First, run the development server:
+## Explore
+
+| Section | What you'll find |
+| --- | --- |
+| History (`/history`) | A timeline of key events and periods in Japan's past |
+| Geography (`/geography`) | An introduction to Japan's landscape and prefectures |
+| Culture (`/culture`) | Cultural heritage, beliefs, and traditions |
+| Language (`/language`) | An overview of hiragana, katakana, and kanji |
+
+## Built With
+
+- [Next.js](https://nextjs.org/) 16 with the App Router
+- [React](https://react.dev/) 19 and [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS](https://tailwindcss.com/) 4
+- [Phosphor Icons](https://phosphoricons.com/)
+
+## Run Locally
+
+You'll need [Node.js](https://nodejs.org/) installed. Clone the repository, install its dependencies, and start the development server:
 
 ```bash
+git clone <repository-url>
+cd Japan
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in your browser. The development server refreshes as you make changes.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Available Scripts
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+| Command | Description |
+| --- | --- |
+| `npm run dev` | Start the local development server |
+| `npm run build` | Create a production build |
+| `npm run start` | Serve the production build locally |
+| `npm run lint` | Run ESLint across the project |
 
-## Learn More
+To check a production build locally:
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+npm run build
+npm run start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+src/app/
+├── components/   # Shared layout and topic sections
+├── culture/      # Culture page route
+├── geography/    # Geography page route
+├── history/      # History page route
+├── language/     # Language page route
+├── data.ts       # Shared timeline and language-card data
+├── globals.css   # Global styles
+├── layout.tsx    # Root layout and navigation
+└── page.tsx      # Home page
+public/           # Images and other static assets
+```
 
-## Deploy on Vercel
+## Deployment
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+This is a standard Next.js app and can be deployed to [Vercel](https://vercel.com/) or another platform that supports Next.js. See the [Next.js deployment guide](https://nextjs.org/docs/app/building-your-application/deploying) for platform-specific instructions.
